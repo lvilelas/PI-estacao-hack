@@ -1,0 +1,56 @@
+.Header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top:0;
+	right:0;
+	left:0;
+}
+.Header-container{
+    padding: 20px 25px 13px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-menu{
+    margin-left: 30px;
+}
+
+.Header-link-acesso{
+    margin-right: 20px;
+}
+
+.Header-link-evento{
+    margin-right: 35px;
+}
+
+a{
+    color: #61dafb;
+    font-size: 0.8rem;
+}
+
+#logo{
+    width: 60px;
+}
+
+.Header-menu-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 590px) {
+    .Header-menu{
+        display: none;
+    }
+    .Header-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+    }
+    .Header-menu-mobile span{
+        background: #61dafb;
+        height: 2px;
+        width: 20px;
+        margin-bottom: 5px;
+    }
+    
+}
