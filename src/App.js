@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header/>
         <div>
-          <CardList/>
+          <CardList titulo="Eventos"/>
         </div>
       <Footer/>
     </div>
