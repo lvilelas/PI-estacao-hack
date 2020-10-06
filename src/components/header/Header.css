@@ -1,15 +1,16 @@
 .Header{
-    position: fixed;
+    position: sticky;
     width: 100%;
     background-color: white;
     top:0;
 	right:0;
-	left:0;
+    left:0;
 }
 .Header-container{
     padding: 20px 25px 13px 25px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 2px 6px #d1d1d1;
 }
 
 .Header-menu{
@@ -33,24 +34,88 @@ a{
     width: 60px;
 }
 
-.Header-menu-mobile{
-    display: none;
+.Header-menu-mobile,#Header-menu-mobile-checkbox,#Header-links-mobile{
+display: none;
 }
 
 @media only screen and (max-width: 590px) {
     .Header-menu{
         display: none;
     }
+
+    #Header-menu-mobile-checkbox{
+        display: none;
+    }
+
     .Header-menu-mobile{
-        display: flex;
-        flex-direction: column;
-        margin: auto 0;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 0px;
+        margin-top: 45px;   
+        margin-right: 15px;
+        height: 20px;
+        width: 24px;
     }
     .Header-menu-mobile span{
         background: #61dafb;
-        height: 2px;
-        width: 20px;
-        margin-bottom: 5px;
+        height: 4px;
+        width: 24px;
+        border-radius: 2px;
+        position: absolute;
+        display: block;
+        transition: 0.25s ease-in-out;
+    }
+
+    .Header-menu-mobile span:nth-child(1){
+        top: 0px;
+    }
+
+    .Header-menu-mobile span:nth-child(2){
+        top: 8px;
+    }
+
+    .Header-menu-mobile span:nth-child(3){
+        top: 16px;
+    }
+
+    #Header-menu-mobile-checkbox:checked + .Header-menu-mobile span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+      }
+      
+    #Header-menu-mobile-checkbox:checked + .Header-menu-mobile span:nth-child(2){
+        opacity: 0;
+    }
+
+    #Header-menu-mobile-checkbox:checked + .Header-menu-mobile span:nth-child(3){
+        transform: rotate(45deg);
+        top:8px;
+    }
+
+    #Header-menu-mobile-checkbox:checked ~ #Header-links-mobile{
+        opacity: 100;
+        height: 100px;
+        margin-top: 20px;
+        padding-bottom: 25px;
+        transform: scaleY(1);
+    }
+    
+    #Header-links-mobile{
+        transform: scaleY(0.3);
+        opacity: 0;
+        height: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .5s ease;
+        border-bottom: 1px solid rgb(233, 231, 231);
+    }
+
+    #Header-links-mobile a{
+        width: fit-content;
+        margin-bottom: 15px;
     }
     
 }

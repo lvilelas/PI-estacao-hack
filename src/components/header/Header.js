@@ -18,11 +18,17 @@ class Header extends React.Component {
                         <a onClick={this.teste} className="Header-link-evento">ORGANIZE SEU EVENTO</a>
                         <a className="Header-link-acesso">ACESSE SUA CONTA</a><Button text="CADASTRE-SE" />
                     </div>
-                    <div className="Header-menu-mobile">
+                </div>
+                    <input type="checkbox" id="Header-menu-mobile-checkbox"/>
+                    <label for="Header-menu-mobile-checkbox" className="Header-menu-mobile">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </label>
+                <div id="Header-links-mobile">
+                    <a>ORGANIZE SEU EVENTO</a>
+                    <a>ACESSE SUA CONTA</a>
+                    <Button text="CADASTRE-SE"/>
                 </div>
             </div>
         );
