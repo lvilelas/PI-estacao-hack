@@ -8,6 +8,10 @@
     border-bottom-right-radius: 0px;
 }
 
+.rec-slider{
+    z-index: -1;
+}
+
 .card-quadrado{
     display: flex;
     width: 340px; 
