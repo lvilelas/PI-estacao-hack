@@ -1,1 +1,9 @@
 
+.AppBody{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.AppBody .container-card-grande{
+    margin-top: 20px;
+}

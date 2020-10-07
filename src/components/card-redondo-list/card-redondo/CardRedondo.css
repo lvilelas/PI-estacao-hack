@@ -1,0 +1,28 @@
+.card-circular{
+    display: flex;
+    width: 100%; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-circular .head-card-img {
+    width: 107px;
+    height: 107px; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-circular .head-card-img:hover > img{
+    transform: scale(1.2);
+}
+
+.card-circular .head-card-img img {
+    width: 100%; 
+    height: 100%;   
+}
+
+.card-circular .footer-card-img {
+    width: 100%;
+    padding: 15px;
+    font-size: 0.8rem;
+    text-align: center;
+}

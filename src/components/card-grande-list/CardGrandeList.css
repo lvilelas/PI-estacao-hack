@@ -1,0 +1,49 @@
+
+  .CardGrandeList .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+  .CardGrandeList .rec-arrow:hover:enabled, .rec-arrow:focus:enabled{
+    color: black!important;
+    background-color: transparent!important;
+    box-shadow: none!important;
+  }
+  .CardGrande-titulo{
+        float: left;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0px 10px 0 50px;
+  }
+  .CardGrandeList .rec.rec-arrow{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    min-width: 30px;
+    min-height: 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    line-height: 1px;
+  }
+  
+  .CardGrandeList .rec.rec-arrow-left{
+    padding-right: 10px;
+  }
+  
+  .CardGrandeList .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+  } 
+  .CardGrandeList .rec-dot,.CardGrandeList .rec-dot:focus,.CardGrandeList .rec-dot:hover{
+    display: block;
+    padding: 0px 0px;
+    width: 12px;
+    height: 12px;
+    box-shadow: none;
+    border: 2px solid #d3d3d3b9;
+  }
+
+  .CardGrandeList .rec-dot_active,.CardGrandeList .dot_active:focus{
+      background-color: transparent;
+      border: 2px solid #61dafb!important;
+  }
+

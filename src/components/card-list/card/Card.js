@@ -8,9 +8,9 @@ class Card extends React.Component {
                 <div className="head-card-img">
                     <img src={this.props.img} alt="imagem" />
                 </div>
-                <div className="periodo-card-img">
-                    <span>{this.props.data}</span>
-                </div>
+                <p className="periodo-card-img">
+                    <span>{this.props.data1}</span><span id="card-quadrado-data2">{this.props.data2}</span>
+                </p>
                 <span className="card-separador"/>
                 <div className="footer-card-img">
                     {this.props.titulo}

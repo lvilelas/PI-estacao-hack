@@ -7,35 +7,32 @@ class CardList extends React.Component {
     state = {}
 
     render() {
-        return (<div>
+        return (<div className="CardList">
            <p className="card-list-title">{this.props.titulo}</p>
            <Carousel breakPoints={breakPoints}>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
-                <Card titulo="Curso TI" data="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT " data2=" 2 NOV" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
+                <Card titulo="Curso TI" data1="6 OUT 8:30" tipoEvento="Evento Online" img="https://images.sympla.com.br/5f775ba60c7c2-xs.jpg"/>
            </Carousel>
         </div>);
     }
 }
 
 const breakPoints = [
-    {width:600, itemsToShow:1},
-    {width:900, itemsToShow:2},
-    {width:1200, itemsToShow:3},
-    {width:1500, itemsToShow:4},
-    {width:1900, itemsToShow:5},
-    {width:2300, itemsToShow:6},
-    {width:2500, itemsToShow:7}
+    {width:1, itemsToShow:1},
+    {width:500, itemsToShow:2},
+    {width:800, itemsToShow:3},
+    {width:1000, itemsToShow:4}
 ]
 export default CardList;
