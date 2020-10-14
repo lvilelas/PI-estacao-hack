@@ -32,7 +32,9 @@ a{
 }
 
 #logo{
-    width: 60px;
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .Header-menu-mobile,#Header-menu-mobile-checkbox,#Header-links-mobile{
