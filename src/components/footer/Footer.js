@@ -9,7 +9,7 @@ const Footer = () => (
 
   <div class="footer">
 
-    <h1 class="footer__logo">º**LOGOTIPO**º</h1>
+
 
     <ul class="footer__nav">
       <li class="nav__item nav__item--extra">
