@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../button/Button.js'
 import './Header.css';
+import { Link } from 'react-router-dom'
 class Header extends React.Component {
     state = {
     }
@@ -12,7 +13,9 @@ class Header extends React.Component {
             <div className="Header">
                 <div className="Header-container">
                     <div className="Header-logo">
-                        <img id="logo" src="../../logo192.png" />
+                        <Link to="/">
+                            <img id="logo" src="../../logo192.png" />
+                        </Link>
                     </div>
                     <div className="Header-menu">
                         <a onClick={this.teste} className="Header-link-evento">ORGANIZE SEU EVENTO</a>
