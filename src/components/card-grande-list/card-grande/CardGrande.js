@@ -15,7 +15,7 @@ class CardGrande extends React.Component {
             <div className="CardGrande-info">
                 <div>
                     <div><p><span className="CardGrande-info-data">{this.props.dataDe}</span> <span className="CardGrande-info-data" id="CardGrande-data2">{this.props.dataAte}</span></p></div>
-                    <div><p className="CardGrande-info-texto">{this.props.titulo}}</p></div>
+                    <div><p className="CardGrande-info-texto">{this.props.titulo}</p></div>
                     <div><p className="CardGrande-info-local">{this.props.descricao}</p></div>
                 </div>
                 <div>

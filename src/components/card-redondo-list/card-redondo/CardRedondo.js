@@ -1,15 +1,17 @@
 import React from 'react';
 import './CardRedondo.css'
 class CardRedondo extends React.Component {
-    state = {}
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
             <div class="card-circular">
                 <div class="head-card-img">
-                    <img src="https://www.sympla.com.br/images/thumb-collection-gratis.jpg?v=1.0" alt="imagem" />
+                    <img src={this.props.imagem} alt="imagem" />
                 </div>
                 <div class="footer-card-img">
-                    titulo da imagem
+                    {this.props.titulo}
                 </div>
             </div>
         );
