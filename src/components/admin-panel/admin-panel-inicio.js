@@ -18,7 +18,7 @@ class Editor extends Component {
   }
 
   updateState = () => {
-    fetch('https://projeto-pi-digitalhouse.herokuapp.com/listaEventos' + this.props.tipo)
+    fetch('https://projeto-pi-digitalhouse.herokuapp.com/' + this.props.tipo)
     .then(response => response.json())
     .then(lista => this.setState({lista: lista}))
   }

@@ -124,16 +124,28 @@
 .box-flex div a {
   position: absolute;
   display: block;
-  bottom: 0;
+  bottom: 3px;
   right: 5px;
   padding: 0;
   color: rgb(87, 87, 87);
   font-size: 25px;
   cursor: pointer;
+  background-color: rgb(240, 240, 240);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 
 .delete-icon {
   top: 0;
+  background-color: gray;
+  line-height: 30px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  
 }
 
 .btn-add-evento {
