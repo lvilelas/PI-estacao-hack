@@ -1,9 +1,12 @@
 import React from 'react';
 import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import '../footer/footer.css'
+import { Link } from 'react-router-dom'
+
 
 
 const Footer = () => (
+
   <div class="footer">
 
     <h1 class="footer__logo">º**LOGOTIPO**º</h1>
@@ -140,17 +143,18 @@ const Footer = () => (
           <a class="#" href="#">Sobre</a>
           <a href="#">Home</a>
           <a href="#">Blog</a>
-          <a href="#">Contato</a>
+          <Link to="/contato">Contato</Link>
         </p>
       </div>
 
       <div class="legal">
         <p>&copy; 2020 Something. All rights reserved.</p>
         <span>Feito com <span class="heart">♥</span>
-            Facebook Coder</span>
+        Estação Hack Facebook</span>
       </div>
 
     </footer>
+
   </div>
 );
 
