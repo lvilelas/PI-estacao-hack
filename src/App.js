@@ -2,10 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './components/header/Header.js'
 import Footer from './components/footer/Footer';
-import CardList from './components/card-list/CardList.js';
-import CardGrandeList from './components/card-grande-list/CardGrandeList.js'
-import CardRedondoList from './components/card-redondo-list/CardRedondoList'
 
+
+import AdminPanel from './components/admin-panel/admin-panel.component'
+import Inicio from './Pages/Inicio/Inicio.js'
+
+import { Switch, Route } from 'react-router-dom';
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +24,18 @@ function App() {
     </div>
   );
 }
+*/
 
+function App() {
+  return (
+    <div className="App">
+      <Header />
+        <Switch>
+          <Route exact path="/" component={Inicio} />
+          <Route path="/admin" component={AdminPanel} />
+        </Switch>
+      <Footer />
+    </div>
+  )
+}
 export default App;

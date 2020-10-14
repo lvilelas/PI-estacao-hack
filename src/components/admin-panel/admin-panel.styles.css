@@ -1,0 +1,179 @@
+
+.AdminPanel {
+  margin: 1%;
+}
+
+.AdminPanel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(153, 153, 153);
+  border-radius: 8px 8px 0 0;
+}
+
+.AdminPanel-header div {
+  padding: 0 20px;
+  
+}
+
+.AdminPanel-header div h3 {
+  font-size: 25px;
+  color: white;
+}
+
+.AdminPanel-btnClose {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: rgb(54, 54, 54);
+  background-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.AdminPanel-section {
+  display: flex;
+  justify-content: center;
+}
+
+.AdminPanel-section nav{
+  width: 20%;
+  background-color: whitesmoke;
+}
+
+.AdminPanel-section nav ul {
+  padding-left: 0;
+}
+
+.AdminPanel-section nav ul li {
+  list-style: none;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+
+.AdminPanel-section nav ul li:hover {
+  transition: 200ms;
+  background-color: rgb(214, 214, 214);
+}
+
+.AdminPanel-section nav ul li a {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+  font-size: 25px;
+}
+
+
+
+.AdminPanel-section div {
+  width: 100%;
+}
+
+.AdminPanel-config-header  {
+  display: flex;
+  justify-content: center;
+}
+
+.AdminPanel-config-section {
+  display: flex;
+  width: 100%q;
+  flex-direction: column;
+
+}
+
+
+.box-flex {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  background-color: rgb(192, 187, 187);
+}
+
+.box-flex:first-child {
+  background-color: rgb(122, 122, 122);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(46, 46, 46);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.box-flex div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(196, 203, 209);
+}
+
+.box-flex div:nth-child(1) {
+  width: 10%;
+}
+
+.box-flex div span {
+  text-align: center;
+  width: 100%;
+}
+
+.box-flex div{
+  position: relative;
+}
+
+.box-flex div a {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 5px;
+  padding: 0;
+  color: rgb(87, 87, 87);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  top: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .AdminPanel-section {
+    flex-direction: column;
+  }
+
+  .AdminPanel-section nav{
+    width: 100vw;
+  }
+
+  
+
+  
+
+  .box-flex {
+    height: 130px;
+  }
+
+  .box-flex {
+    font-size: 12px;
+  }
+
+  .box-flex:first-child {
+    height: 50px;
+    font-size: 10px;
+  }
+  
+  .box-flex div:first-child {
+    width: 20%;
+  }
+
+  .box-flex img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .box-flex img {
+    width: 70px;
+  }
+}
