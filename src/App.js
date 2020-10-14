@@ -5,8 +5,8 @@ import Footer from './components/footer/Footer';
 
 
 import AdminPanel from './components/admin-panel/admin-panel.component'
-import Home from './pages/Home.js'
-import PageContato from './pages/PageContato.js';
+import Home from './Pages/Home.js'
+import PageContato from './Pages/PageContato.js';
 
 import { Switch, Route } from 'react-router-dom';
 
