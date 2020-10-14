@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer';
 import CardList from './components/card-list/CardList.js';
 import CardGrandeList from './components/card-grande-list/CardGrandeList.js'
 import CardRedondoList from './components/card-redondo-list/CardRedondoList'
+import AddIngressos from './components/add-ingresso';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <CardGrandeList/>
           </div>
           <CardList titulo="Eventos"/>
+          
         </div>
       <Footer/>
     </div>
