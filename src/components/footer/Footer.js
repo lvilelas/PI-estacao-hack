@@ -146,8 +146,6 @@ const Footer = () => (
 
       <div class="legal">
         <p>&copy; 2020 Something. All rights reserved.</p>
-        <span>Feito com <span class="heart">♥</span>
-            Facebook Coder</span>
       </div>
 
     </footer>
