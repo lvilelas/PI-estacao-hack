@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
 import Editor from './admin-panel-inicio'
 
-function Eventos() {
-  return(
-    <header>
-      <h3>Eventos</h3>
-    </header>
-  )
-}
-
 function AdminPanelSection({ history, match }) {
   return(
     <section className="AdminPanel-section">
@@ -23,9 +15,9 @@ function AdminPanelSection({ history, match }) {
         <div>
           
             <Switch>
-              <Route path="/admin/eventos" component={() => <Editor tipo="listaEventos" />} />
-              <Route path="/admin/destaques" component={() => <Editor tipo="listaCards" />} />
-              <Route path="/admin/cards" component={() => <Editor tipo="listaCardRedondo" />} />
+              <Route path="/admin/eventos" component={() => <Editor tipo="listaEventos" titulo="Eventos" />} />
+              <Route path="/admin/destaques" component={() => <Editor tipo="listaCards" titulo="Destaques" />} />
+              <Route path="/admin/cards" component={() => <Editor tipo="listaCardRedondo" titulo="Mini-Cards" />} />
             </Switch>
           
         </div>

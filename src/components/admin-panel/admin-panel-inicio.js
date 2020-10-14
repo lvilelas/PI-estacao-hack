@@ -83,7 +83,7 @@ class Editor extends Component {
     return(
       <div className="list-div">
       <header className="AdminPanel-config-header">
-        <h3>Início</h3>
+        <h3>{this.props.titulo}</h3>
       </header>
       <section className="AdminPanel-config-section">
 
@@ -145,7 +145,7 @@ class Editor extends Component {
           ))
         }
 
-        <a onClick={() => this.handleChange([{ 'titulo': 'novo evento', 'dataDe':'00 MMM', 'dataAte': '00 MMM', 'descricao':'descrição do evento', 'imagem': 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROo0xS5S-uGRJBCQM_zkY9BA3IVQT4AdgdGA&usqp=CAU', "tituloEdit": false, "dataDeEdit": false,	"dataAteEdit": false,"descricaoEdit": false, "imagemEdit": false }, 'descricao', 'POST'])}>Add Evento</a>
+        <a className="btn-add-evento" onClick={() => this.handleChange([{ 'titulo': 'novo evento', 'dataDe':'00 MMM', 'dataAte': '00 MMM', 'descricao':'descrição do evento', 'imagem': 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROo0xS5S-uGRJBCQM_zkY9BA3IVQT4AdgdGA&usqp=CAU', "tituloEdit": false, "dataDeEdit": false,	"dataAteEdit": false,"descricaoEdit": false, "imagemEdit": false }, 'descricao', 'POST'])}>Add Evento</a>
       </section>
     </div>
     )
