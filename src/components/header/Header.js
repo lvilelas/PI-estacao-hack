@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../button/Button.js';
 import './Header.css';
 
-import Logo from '../../logo192.png';
+import Logo from '../../img/logo.png';
 
 import { Link } from 'react-router-dom';
 
