@@ -2,21 +2,31 @@ import React from 'react';
 import Carousel from "react-elastic-carousel";
 import CardRedondo from "./card-redondo/CardRedondo.js"
 import './CardRedondoList.css'
+
 class CardRedondoList extends React.Component {
-    state = {  }
+    constructor() {
+        super();
+        this.state = {
+            lista: []
+        }
+    }
+
+    componentDidMount() {
+        fetch('https://projeto-pi-digitalhouse.herokuapp.com/listaCardRedondo')
+        .then(response => response.json())
+        .then(lista => this.setState({lista: lista}))
+    }
+
     render() { 
         return ( 
         <div className="CardRedondoList">
             <p className="CardRedondoList-titulo">Viva tudo que te conecta</p>
             <Carousel breakPoints={breakPoints}>
-                <CardRedondo/>
-                <CardRedondo/>
-                <CardRedondo/>
-                <CardRedondo/>
-                <CardRedondo/>
-                <CardRedondo/>
-                <CardRedondo/>
-                <CardRedondo/>
+                {
+                    this.state.lista.map(({ imagem, titulo }) => (
+                        <CardRedondo imagem={imagem} titulo={titulo}/>
+                    ))
+                }
             </Carousel>
         </div>
              );

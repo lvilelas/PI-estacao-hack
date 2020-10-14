@@ -149,8 +149,7 @@ const Footer = () => (
 
       <div class="legal">
         <p>&copy; 2020 Something. All rights reserved.</p>
-        <span>Feito com <span class="heart">♥</span>
-        Estação Hack Facebook</span>
+        
       </div>
 
     </footer>
